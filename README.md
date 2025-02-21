@@ -57,7 +57,7 @@ Network-Optimization-Tool/
 └── README.md                     # This documentation
 ```
 
-## Setup Instructions
+## Setup Guide
 
 ### 1. Clone the Repository
 ```bash
