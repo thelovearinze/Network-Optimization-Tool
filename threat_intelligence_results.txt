@@ -1,0 +1,10 @@
+{'IP': '147.185.132.172', 'Malicious Votes': 8, 'Suspicious Votes': 1, 'Harmless Votes': 54, 'ASN': 396982, 'Country': 'US'}
+{'IP': '89.248.163.14', 'Malicious Votes': 6, 'Suspicious Votes': 3, 'Harmless Votes': 55, 'ASN': 202425, 'Country': 'NL'}
+{'IP': '194.50.16.198', 'Malicious Votes': 12, 'Suspicious Votes': 1, 'Harmless Votes': 53, 'ASN': 49870, 'Country': 'NL'}
+{'IP': '162.216.149.140', 'Malicious Votes': 8, 'Suspicious Votes': 1, 'Harmless Votes': 54, 'ASN': 396982, 'Country': 'US'}
+{'IP': '35.203.210.38', 'Malicious Votes': 1, 'Suspicious Votes': 3, 'Harmless Votes': 59, 'ASN': 396982, 'Country': 'GB'}
+{'IP': '57.129.64.219', 'Malicious Votes': 14, 'Suspicious Votes': 4, 'Harmless Votes': 50, 'ASN': 16276, 'Country': 'DE'}
+{'IP': '107.173.58.11', 'Malicious Votes': 5, 'Suspicious Votes': 3, 'Harmless Votes': 57, 'ASN': 20278, 'Country': 'US'}
+{'IP': '109.236.61.85', 'Malicious Votes': 13, 'Suspicious Votes': 3, 'Harmless Votes': 52, 'ASN': 213613, 'Country': 'US'}
+{'IP': '35.203.210.55', 'Malicious Votes': 4, 'Suspicious Votes': 3, 'Harmless Votes': 56, 'ASN': 396982, 'Country': 'GB'}
+{'IP': '80.82.77.33', 'Malicious Votes': 11, 'Suspicious Votes': 1, 'Harmless Votes': 53, 'ASN': 202425, 'Country': 'NL'}
