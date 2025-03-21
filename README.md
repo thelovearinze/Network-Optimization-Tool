@@ -5,11 +5,11 @@ A smart and automated tool designed to optimize network security by analyzing Az
 ## Project Overview
 
 This tool automates the following steps:
-- **Fetching Azure NSG Flow Logs** from Azure Storage.
-- **Parsing logs** into a structured format.
-- **Detecting suspicious and malicious IPs**.
-- **Querying VirusTotal for threat intelligence**.
-- **Visualizing results** using Python's Matplotlib.
+- **Fetching Azure NSG Flow Logs** from Azure Storage
+- **Parsing logs** into a structured format
+- **Detecting suspicious and malicious IPs**
+- **Querying VirusTotal for threat intelligence**
+- **Visualizing results** using Python's Matplotlib
 
 By automating these steps, the tool helps pinpoint network bottlenecks, highlights potential threats, and enhances security operations in a smarter way.
 
@@ -24,11 +24,11 @@ By automating these steps, the tool helps pinpoint network bottlenecks, highligh
 ## Prerequisites
 
 Before getting started, make sure you have:
-- **Azure CLI** installed and logged in.
-- **An Azure Storage Account** where NSG logs are stored.
-- **A VirusTotal API Key** (or another threat intelligence provider).
-- **Python 3.x** installed on your local machine.
-- **Git** for version control.
+- **Azure CLI** installed and logged in
+- **An Azure Storage Account** where NSG logs are stored
+- **A VirusTotal API Key** (or another threat intelligence provider)
+- **Python 3.x** installed on your local machine
+- **Git** for version control
 
 ## Technical Architecture
 
