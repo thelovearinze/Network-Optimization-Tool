@@ -1,3 +1,10 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # This loads the variables from your .env file
+
+API_KEY = os.getenv("API_KEY")  # Now API_KEY comes from the .env file
+
 import requests
 
 # List of blocked IPs from analysis_results.txt
@@ -8,7 +15,9 @@ blocked_ips = [
     "80.82.77.33"
 ]
 
-API_KEY = "6edd29e5e707c784ada1d6a6286e967e870bbad09347e4b6cf879d6aa615f1e4"
+# Removed the hardcoded API_KEY assignment here:
+# API_KEY = "6edd29e5e707c784ada1d6a6286e967e870bbad09347e4b6cf879d6aa615f1e4"
+
 VIRUSTOTAL_URL = "https://www.virustotal.com/api/v3/ip_addresses/"
 
 # Function to query threat intelligence
@@ -25,8 +34,8 @@ def check_ip(ip):
             "Malicious Votes": data["data"]["attributes"]["last_analysis_stats"]["malicious"],
             "Suspicious Votes": data["data"]["attributes"]["last_analysis_stats"]["suspicious"],
             "Harmless Votes": data["data"]["attributes"]["last_analysis_stats"]["harmless"],
-            "ASN": data["data"]["attributes"]["asn"] if "asn" in data["data"]["attributes"] else "Unknown",
-            "Country": data["data"]["attributes"]["country"] if "country" in data["data"]["attributes"] else "Unknown",
+            "ASN": data["data"]["attributes"].get("asn", "Unknown"),
+            "Country": data["data"]["attributes"].get("country", "Unknown"),
         }
     else:
         return {"IP": ip, "Error": response.text}
@@ -39,4 +48,4 @@ with open("threat_intelligence_results.txt", "w") as file:
     for result in results:
         file.write(str(result) + "\n")
 
-print("✅ Threat Intelligence Analysis Completed! Results saved in 'threat_intelligence_results.txt'")
+print("Threat Intelligence Analysis Completed! Results saved in 'threat_intelligence_results.txt'")
