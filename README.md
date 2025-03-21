@@ -15,11 +15,11 @@ By automating these steps, the tool helps pinpoint network bottlenecks, highligh
 
 ## Features
 
-- **Automated NSG Flow Log Retrieval** – No more manual downloads.
-- **Built-in Threat Intelligence** (VirusTotal integration).
-- **Easy Data Analysis & Visualization** using pandas & Matplotlib.
-- **End-to-End Pipeline** – Everything runs in a structured flow.
-- **Security-Focused** – Flags and logs malicious traffic in real-time.
+- **Automated NSG Flow Log Retrieval** – No more manual downloads
+- **Built-in Threat Intelligence** (VirusTotal integration)
+- **Easy Data Analysis & Visualization** using pandas & Matplotlib
+- **End-to-End Pipeline** – Everything runs in a structured flow
+- **Security-Focused** – Flags and logs malicious traffic in real-time
 
 ## Prerequisites
 
