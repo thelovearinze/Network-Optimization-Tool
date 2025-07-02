@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+
+# Logs and reports
+*.csv
+*.log
+
+# Environment variables
+.env
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Images / screenshots
+*.png
+*.jpg
+*.gif

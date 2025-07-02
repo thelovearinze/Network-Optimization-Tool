@@ -1,0 +1,55 @@
+2025-07-02 14:22:02,051 — INFO — Loaded NSG flow log from flowlog.json
+2025-07-02 14:22:02,051 — INFO — Extracted 0 flow records
+2025-07-02 14:24:10,943 — INFO — Loaded NSG flow log from flowlog.json
+2025-07-02 14:24:10,944 — INFO — Extracted 73 flow records
+2025-07-02 14:28:06,953 — INFO — Loaded NSG flow log from flowlog.json
+2025-07-02 14:28:06,953 — INFO — Extracted 73 flow records
+2025-07-02 14:28:06,953 — INFO — Suspicious activity detected: {'timestamp': '1740171609', 'src_ip': '92.255.85.189', 'dest_ip': '10.0.0.4', 'src_port': '55766', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:28:06,953 — INFO — Suspicious activity detected: {'timestamp': '1740171642', 'src_ip': '149.62.45.4', 'dest_ip': '10.0.0.4', 'src_port': '46288', 'dest_port': '8080', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:28:06,953 — INFO — Suspicious activity detected: {'timestamp': '1740171661', 'src_ip': '8.221.136.6', 'dest_ip': '10.0.0.4', 'src_port': '51800', 'dest_port': '3389', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:28:06,954 — INFO — Suspicious activity detected: {'timestamp': '1740171665', 'src_ip': '125.228.254.164', 'dest_ip': '10.0.0.4', 'src_port': '64084', 'dest_port': '23', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:28:06,954 — INFO — Suspicious activity detected: {'timestamp': '1740171669', 'src_ip': '149.62.45.4', 'dest_ip': '10.0.0.4', 'src_port': '50718', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:28:06,954 — INFO — Suspicious activity detected: {'timestamp': '1740171748', 'src_ip': '218.161.97.71', 'dest_ip': '10.0.0.4', 'src_port': '9221', 'dest_port': '23', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:28:06,954 — INFO — Suspicious activity detected: {'timestamp': '1740171827', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40080', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:28:06,954 — INFO — Suspicious activity detected: {'timestamp': '1740171827', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40096', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:28:06,954 — INFO — Suspicious activity detected: {'timestamp': '1740171828', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40112', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:28:06,954 — INFO — Threat detection complete: 9 suspicious flows found
+2025-07-02 14:32:04,289 — INFO — Loaded NSG flow log from flowlog.json
+2025-07-02 14:32:04,290 — INFO — Extracted 73 flow records
+2025-07-02 14:32:04,290 — INFO — Suspicious activity detected: {'timestamp': '1740171609', 'src_ip': '92.255.85.189', 'dest_ip': '10.0.0.4', 'src_port': '55766', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:32:04,290 — INFO — Suspicious activity detected: {'timestamp': '1740171642', 'src_ip': '149.62.45.4', 'dest_ip': '10.0.0.4', 'src_port': '46288', 'dest_port': '8080', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:32:04,290 — INFO — Suspicious activity detected: {'timestamp': '1740171661', 'src_ip': '8.221.136.6', 'dest_ip': '10.0.0.4', 'src_port': '51800', 'dest_port': '3389', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:32:04,290 — INFO — Suspicious activity detected: {'timestamp': '1740171665', 'src_ip': '125.228.254.164', 'dest_ip': '10.0.0.4', 'src_port': '64084', 'dest_port': '23', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:32:04,290 — INFO — Suspicious activity detected: {'timestamp': '1740171669', 'src_ip': '149.62.45.4', 'dest_ip': '10.0.0.4', 'src_port': '50718', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:32:04,290 — INFO — Suspicious activity detected: {'timestamp': '1740171748', 'src_ip': '218.161.97.71', 'dest_ip': '10.0.0.4', 'src_port': '9221', 'dest_port': '23', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:32:04,290 — INFO — Suspicious activity detected: {'timestamp': '1740171827', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40080', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:32:04,290 — INFO — Suspicious activity detected: {'timestamp': '1740171827', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40096', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:32:04,290 — INFO — Suspicious activity detected: {'timestamp': '1740171828', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40112', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:32:04,290 — INFO — Threat detection complete: 9 suspicious flows found
+2025-07-02 14:32:04,290 — INFO — Threat report saved to threats_report.csv
+2025-07-02 14:34:35,154 — INFO — Loaded NSG flow log from flowlog.json
+2025-07-02 14:34:35,154 — INFO — Extracted 73 flow records
+2025-07-02 14:34:35,154 — INFO — Suspicious activity detected: {'timestamp': '1740171609', 'src_ip': '92.255.85.189', 'dest_ip': '10.0.0.4', 'src_port': '55766', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:34:35,154 — INFO — Suspicious activity detected: {'timestamp': '1740171642', 'src_ip': '149.62.45.4', 'dest_ip': '10.0.0.4', 'src_port': '46288', 'dest_port': '8080', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:34:35,155 — INFO — Suspicious activity detected: {'timestamp': '1740171661', 'src_ip': '8.221.136.6', 'dest_ip': '10.0.0.4', 'src_port': '51800', 'dest_port': '3389', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:34:35,155 — INFO — Suspicious activity detected: {'timestamp': '1740171665', 'src_ip': '125.228.254.164', 'dest_ip': '10.0.0.4', 'src_port': '64084', 'dest_port': '23', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:34:35,155 — INFO — Suspicious activity detected: {'timestamp': '1740171669', 'src_ip': '149.62.45.4', 'dest_ip': '10.0.0.4', 'src_port': '50718', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:34:35,155 — INFO — Suspicious activity detected: {'timestamp': '1740171748', 'src_ip': '218.161.97.71', 'dest_ip': '10.0.0.4', 'src_port': '9221', 'dest_port': '23', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:34:35,155 — INFO — Suspicious activity detected: {'timestamp': '1740171827', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40080', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:34:35,155 — INFO — Suspicious activity detected: {'timestamp': '1740171827', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40096', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:34:35,155 — INFO — Suspicious activity detected: {'timestamp': '1740171828', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40112', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:34:35,155 — INFO — Threat detection complete: 9 suspicious flows found
+2025-07-02 14:34:35,155 — INFO — Threat report saved to threats_report.csv
+2025-07-02 14:34:47,361 — INFO — Loaded NSG flow log from flowlog.json
+2025-07-02 14:34:47,362 — INFO — Extracted 73 flow records
+2025-07-02 14:34:47,362 — INFO — Suspicious activity detected: {'timestamp': '1740171609', 'src_ip': '92.255.85.189', 'dest_ip': '10.0.0.4', 'src_port': '55766', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:34:47,362 — INFO — Suspicious activity detected: {'timestamp': '1740171642', 'src_ip': '149.62.45.4', 'dest_ip': '10.0.0.4', 'src_port': '46288', 'dest_port': '8080', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:34:47,362 — INFO — Suspicious activity detected: {'timestamp': '1740171661', 'src_ip': '8.221.136.6', 'dest_ip': '10.0.0.4', 'src_port': '51800', 'dest_port': '3389', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:34:47,362 — INFO — Suspicious activity detected: {'timestamp': '1740171665', 'src_ip': '125.228.254.164', 'dest_ip': '10.0.0.4', 'src_port': '64084', 'dest_port': '23', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:34:47,362 — INFO — Suspicious activity detected: {'timestamp': '1740171669', 'src_ip': '149.62.45.4', 'dest_ip': '10.0.0.4', 'src_port': '50718', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:34:47,362 — INFO — Suspicious activity detected: {'timestamp': '1740171748', 'src_ip': '218.161.97.71', 'dest_ip': '10.0.0.4', 'src_port': '9221', 'dest_port': '23', 'protocol': 'T', 'rule': 'DefaultRule_DenyAllInBound'}
+2025-07-02 14:34:47,362 — INFO — Suspicious activity detected: {'timestamp': '1740171827', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40080', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:34:47,362 — INFO — Suspicious activity detected: {'timestamp': '1740171827', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40096', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:34:47,362 — INFO — Suspicious activity detected: {'timestamp': '1740171828', 'src_ip': '196.251.87.54', 'dest_ip': '10.0.0.4', 'src_port': '40112', 'dest_port': '22', 'protocol': 'T', 'rule': 'UserRule_AllowSSH'}
+2025-07-02 14:34:47,362 — INFO — Threat detection complete: 9 suspicious flows found
+2025-07-02 14:34:47,362 — INFO — Threat report saved to my_custom_report.csv
