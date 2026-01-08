@@ -23,3 +23,8 @@ venv/
 *.png
 *.jpg
 *.gif
+__pycache__/
+*.csv
+*.txt
+.env
+.DS_Store
