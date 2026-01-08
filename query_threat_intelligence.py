@@ -8,16 +8,13 @@ load_dotenv()
 API_KEY = os.getenv("API_KEY")
 VIRUSTOTAL_URL = "https://www.virustotal.com/api/v3/ip_addresses/"
 
-# TODO: In the future, read this list from 'analysis_results.txt' automatically.
-# For now, this is a placeholder list for demonstration.
-blocked_ips = [
-    "147.185.132.172", "89.248.163.14", "194.50.16.198",
-    "162.216.149.140", "35.203.210.38", "57.129.64.219",
-    "107.173.58.11", "109.236.61.85", "35.203.210.55",
-    "80.82.77.33"
-]
+def check_single_ip(ip):
+    """
+    Queries VirusTotal for a single IP address.
+    """
+    if not API_KEY:
+        return {"IP": ip, "Error": "Missing API Key"}
 
-def check_ip(ip):
     headers = {"x-apikey": API_KEY}
     try:
         response = requests.get(f"{VIRUSTOTAL_URL}{ip}", headers=headers)
@@ -40,27 +37,28 @@ def check_ip(ip):
     except Exception as e:
         return {"IP": ip, "Error": str(e)}
 
-if __name__ == "__main__":
-    if not API_KEY:
-        print("Error: API_KEY not found in .env file.")
-        exit(1)
-
-    print(f"Starting Threat Intelligence Scan for {len(blocked_ips)} IPs...")
+def batch_query_virustotal(ip_list):
+    """
+    Scans a list of IPs, respecting the API rate limit.
+    """
     results = []
-
-    for ip in blocked_ips:
-        print(f"Scanning {ip}...", end=" ", flush=True)
-        result = check_ip(ip)
+    unique_ips = list(set(ip_list)) # Remove duplicates to save API calls
+    
+    print(f"[*] Starting Threat Intelligence Scan for {len(unique_ips)} unique IPs...")
+    
+    for i, ip in enumerate(unique_ips):
+        print(f"    [{i+1}/{len(unique_ips)}] Scanning {ip}...", end=" ", flush=True)
+        result = check_single_ip(ip)
         results.append(result)
         print("Done.")
         
-        # SLEEP to respect VirusTotal free tier (4 requests/minute)
-        # We wait 15 seconds to be safe.
-        time.sleep(15)
+        # Sleep 15s between requests to respect free tier (unless it's the last one)
+        if i < len(unique_ips) - 1:
+            time.sleep(15)
 
-    # Save results
-    with open("threat_intelligence_results.txt", "w") as file:
-        for result in results:
-            file.write(str(result) + "\n")
+    return results
 
-    print("\nScan Completed. Results saved to 'threat_intelligence_results.txt'")
+# This block allows you to still test it by itself if you want
+if __name__ == "__main__":
+    test_ips = ["8.8.8.8", "1.1.1.1"]
+    print(batch_query_virustotal(test_ips))
